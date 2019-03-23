@@ -24,7 +24,7 @@
         /*"--filesystem=home:rw",*/
         /* Needs to talk to the network: */
         "--share=network",
-        /* Enable playing sound thru pulseaudio */
+        /* Enable playing sound through pulseaudio */
         "--socket=pulseaudio",
         /* Keep user profile after application exit */
         "--persist=.mozilla/",
@@ -32,6 +32,8 @@
         "--filesystem=xdg-download:rw",
         /* Enable access to dri */
         "--device=dri"
+        /* Native notifications support */
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "build-options" : {
         "append-path" : "/usr/lib/sdk/rust-stable/bin",
